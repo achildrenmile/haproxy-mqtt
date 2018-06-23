@@ -1,4 +1,4 @@
-FROM dockerfile/haproxy
+FROM haproxy
 MAINTAINER Andrea Reginato <andrea.reginato@gmail.com>
 
 VOLUME /certs:/certs
