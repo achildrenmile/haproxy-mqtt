@@ -1,4 +1,4 @@
-FROM haproxy:alpine
+FROM haproxy
 MAINTAINER Andrea Reginato <andrea.reginato@gmail.com>
 
 VOLUME /certs:/certs
@@ -13,7 +13,7 @@ ADD restart.bash /haproxy-restart
 WORKDIR /etc/haproxy
 
 # Define default command.
-CMD ["bash", "/haproxy-start"]
+CMD ["bash", "/etc/haproxy/haproxy-start"]
 
 # Expose ports.
 EXPOSE 80
